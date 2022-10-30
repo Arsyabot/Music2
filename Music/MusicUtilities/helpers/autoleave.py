@@ -1,6 +1,6 @@
 from pyrogram.errors import PeerIdInvalid, UserNotParticipant
 from Music.MusicUtilities.tgcallsrun.music import pytgcalls, smexy as user
-
+from Music import LOG_GROUP_ID
 
 async def leave_from_inactive_call():
     all_chat_id = []
@@ -21,7 +21,7 @@ async def leave_from_inactive_call():
                         await user.leave_chat(chat_id)
                 except UserNotParticipant:
                     pass
-            if chat_id not in config.LOG_GROUP_ID:
+            if chat_id not in LOG_GROUP_ID:
                 try:
                     await user.leave_chat(chat_id)
                 except (PeerIdInvalid, UserNotParticipant):
