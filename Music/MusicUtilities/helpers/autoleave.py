@@ -21,7 +21,7 @@ async def leave_from_inactive_call():
                         await user.leave_chat(chat_id)
                 except UserNotParticipant:
                     pass
-            if chat_id not in all_chat_id:
+            if chat_id not in config.LOG_GROUP_ID:
                 try:
                     await user.leave_chat(chat_id)
                 except (PeerIdInvalid, UserNotParticipant):
