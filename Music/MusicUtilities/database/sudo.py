@@ -1,5 +1,6 @@
 from typing import Dict, List, Union
 from Music import db
+from Music import SUDO_USERS
 
 sudoersdb = db.sudoers
 
