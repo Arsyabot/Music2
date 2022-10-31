@@ -443,7 +443,7 @@ Saya perlu menjadi admin dengan beberapa izin:
             what = "Command"
             await LOG_CHAT(message, what)
             user_name = message.from_user.first_name
-            thumb ="cache/IMG_20211105_143948_192.jpg"
+            thumb ="cache/IMG_20211230_165039_159.jpg"
             buttons = playlist_markup(user_name, user_id)
             hmo = await message.reply_photo(
             photo=thumb, 
@@ -477,7 +477,7 @@ Saya perlu menjadi admin dengan beberapa izin:
             return await mystic.edit_text(
                 f"Lagu Tidak Ditemukan.\n**Kemungkinan Alasan:** {e}"
             )
-        thumb ="cache/IMG_20211105_143948_192.jpg"
+        thumb ="cache/IMG_20211230_165039_159.jpg"
         await mystic.delete()
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         hmo = await message.reply_photo(
