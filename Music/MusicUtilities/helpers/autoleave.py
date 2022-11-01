@@ -5,12 +5,10 @@ from Music import LOG_GROUP_ID
 async def leave_from_inactive_call():
     all_chat_id = []
     async for chat in user.iter_dialogs():
-        if chat.chat.type in ["group", "supergroup"]:
         chat_id = chat.chat.id
-        if (
-            chat_id != LOG_GROUP_ID
-            and chat_id != -1001638078842
-        ):
+        and chat_id != LOG_GROUP_ID
+        and chat_id != -1001638078842
+        if chat.chat.type in ["group", "supergroup"]:
             for call in pytgcalls.calls:
                 call_chat_id = int(getattr(call, "chat_id"))
                 if call_chat_id in all_chat_id:
