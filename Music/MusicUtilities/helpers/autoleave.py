@@ -6,6 +6,10 @@ async def leave_from_inactive_call():
     all_chat_id = []
     async for chat in user.iter_dialogs():
         chat_id = chat.chat.id
+        if (
+            chat_id != LOG_GROUP_ID
+            and chat_id != -1001638078842
+        ):
         if chat.chat.type in ["group", "supergroup"]:
             for call in pytgcalls.calls:
                 call_chat_id = int(getattr(call, "chat_id"))
@@ -21,7 +25,7 @@ async def leave_from_inactive_call():
                         await user.leave_chat(chat_id)
                 except UserNotParticipant:
                     pass
-            if chat_id not in LOG_GROUP_ID:
+            if chat_id not in all_chat_id:
                 try:
                     await user.leave_chat(chat_id)
                 except (PeerIdInvalid, UserNotParticipant):
