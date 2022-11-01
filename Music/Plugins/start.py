@@ -43,7 +43,10 @@ def start_pannel():
             InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{CHANNEL}"),
         ],
         [
-            InlineKeyboardButton("📚 ᴘᴇʀɪɴᴛᴀʜ ʙᴏᴛ ᴍᴜꜱɪᴋ​ 📚", url="https://t.me/ruangprojects/47"),
+            InlineKeyboardButton("📚 ᴘᴇʀɪɴᴛᴀʜ ʙᴏᴛ​ 📚", url="https://t.me/ruangprojects/47"),
+        ],
+        [
+            InlineKeyboardButton("♨️ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ♨️", url="https://github.com/PunyaAlby/ALBYMusic"),
         ],
     ]
     return (
@@ -63,7 +66,10 @@ pstart_markup = InlineKeyboardMarkup(
             InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{CHANNEL}"),
         ],
         [
-            InlineKeyboardButton("📚 ᴘᴇʀɪɴᴛᴀʜ ʙᴏᴛ ᴍᴜꜱɪᴋ​ 📚", url="https://t.me/ruangprojects/47"),
+            InlineKeyboardButton("📚 ᴘᴇʀɪɴᴛᴀʜ ʙʙᴏ 📚", url="https://t.me/ruangprojects/47"),
+        ],
+        [
+            InlineKeyboardButton("♨️ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ♨️", url="https://github.com/PunyaAlby/ALBYMusic"),
         ],
     ]
 )
@@ -136,7 +142,7 @@ async def play(_, message: Message):
 
 💬 [{BOT_NAME}](tg://user?id=2129034376) memungkinkan anda untuk memutar musik pada grup melalui obrolan suara yang baru di Telegram!
 
-💡 Untuk Mengetahui Semua Perintah Bot Dan Bagaimana Cara Kerja Nya Dengan Menekan Tombol » 📚 ᴄᴏᴍᴍᴀɴᴅ​!**
+💡 Untuk Mengetahui Semua Perintah Bot Dan Bagaimana Cara Kerja Nya Dengan Menekan Tombol » 📚 ᴘᴇʀɪɴᴛᴀʜ ʙʙᴏ​!**
 
 """,
             parse_mode="markdown",
