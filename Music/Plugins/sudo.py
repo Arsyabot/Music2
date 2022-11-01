@@ -1,6 +1,7 @@
 import os
 
-from Music import OWNER, app
+from Music import app
+from Music.MusicUtilities.database.sudo import OWNER
 from Music.MusicUtilities.database.sudo import add_sudo, get_sudoers, remove_sudo
 from pyrogram import filters
 from pyrogram.types import Message
